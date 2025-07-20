@@ -1,7 +1,7 @@
 const typedText = [
-    "echo 'Welcome to my website!'\n", 
+    "echo 'welcome to the void..'\n", 
     "cat about.txt\n", 
-    "Projects: hacking, coding, breaking things...\n", 
+    "the things I love: cyber security, coding, art, films...\n", 
     "exit\n"
 ];
 
@@ -15,7 +15,7 @@ function type() {
             terminal.textContent += typedText[textIndex][charIndex++];
             setTimeout(type, 100);
         } else {
-            terminal.innerHTML += '<br><span class="prompt">user@machine:~$ </span>';
+            terminal.innerHTML += '<br><span class="prompt">shreddednerve@arch:~$ </span>';
             textIndex++;
             charIndex = 0;
             setTimeout(type, 500);
