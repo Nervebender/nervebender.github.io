@@ -1,8 +1,8 @@
 const typedText = [
-    "echo 'Welcome to my website!'", 
-    "cat about.txt", 
-    "Projects: hacking, coding, breaking things...", 
-    "exit"
+    "echo 'Welcome to my website!'\n", 
+    "cat about.txt\n", 
+    "Projects: hacking, coding, breaking things...\n", 
+    "exit\n"
 ];
 
 const terminal = document.getElementById('typed');
