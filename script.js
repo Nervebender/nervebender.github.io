@@ -24,3 +24,20 @@ function type() {
 }
 
 type();
+
+const aboutLink = document.querySelector('#nav a[href="#about"]');
+const projectsLink = document.querySelector('#nav a[href="#projects"]');
+
+aboutLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('terminal').style.display = 'none';
+    document.getElementById('projects-section').style.display = 'none';
+    document.getElementById('about-section').style.display = 'block';
+});
+
+projectsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('terminal').style.display = 'none';
+    document.getElementById('about-section').style.display = 'none';
+    document.getElementById('projects-section').style.display = 'block';
+});
